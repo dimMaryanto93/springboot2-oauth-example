@@ -3,7 +3,7 @@ volumes:
   pg_data: {}
 services:
   postgres:
-    image: postgres:14.6
+    image: postgres:14
     environment:
       POSTGRES_PASSWORD: passwordnyaExample
       POSTGRES_USER: example
