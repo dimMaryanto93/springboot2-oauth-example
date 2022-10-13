@@ -1,0 +1,14 @@
+version: '3.9'
+volumes:
+  pg_data: {}
+services:
+  postgres:
+    image: postgres:14.6
+    environment:
+      POSTGRES_PASSWORD: passwordnyaExample
+      POSTGRES_USER: example
+      POSTGRES_DB: example
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
